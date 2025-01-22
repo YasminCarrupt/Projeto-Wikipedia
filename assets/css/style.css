@@ -1,0 +1,203 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+figure {
+    text-align: center;
+}
+/* Paleta de cores inspirada em Cuphead */
+:root {
+    --background-color: #fdf2dc;
+    --text-color: #4a2c2a;
+    --accent-color: #c0392b;
+    --secondary-color: #2c3e50;
+}
+
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principal */
+body {
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Menu lateral */
+nav {
+    background: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid var(--accent-color);
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    background: var(--background-color);
+    border: 2px solid var(--accent-color);
+}
+
+table th, table td {
+    border: 1px solid var(--accent-color);
+    text-align: left;
+    padding: 10px;
+}
+
+table th {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Links extras */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px;
+    height: auto;
+}
+
+.logo-text {
+    margin-left: 10px;
+    width: 120px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.extras a {
+    margin-left: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.extras a:hover {
+    text-decoration: underline;
+}
